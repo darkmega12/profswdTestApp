@@ -15,4 +15,8 @@ class GamesController < ApplicationController
 		end
 		@users = str
 	end
+
+	def inventory
+		@name_search = params[:name_search]
+	end
 end

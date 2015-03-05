@@ -1,0 +1,9 @@
+<form method='get'>
+	<div> search game equipment name </div>
+	<input type='text' name='name_search'/>
+	<input type='submit' value='Submit'/>
+</form>
+
+<% if @name_search.present? %>
+	<div> You searched for: <%= @name_search %> </div>
+<% end %>

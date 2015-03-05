@@ -55,4 +55,5 @@ Rails.application.routes.draw do
   #   end
   root 'games#connect4'
   get 'Users' => 'games#users'
+  get 'inventory' => 'games#inventory'
 end
