@@ -56,4 +56,10 @@ Rails.application.routes.draw do
   root 'games#connect4'
   get 'Users' => 'games#users'
   get 'inventory' => 'games#inventory'
+  get 'game_equipment/new' => 'games#new_game_equipment'
+  post 'game_equipment' => 'games#create_game_equipment'
+  get 'login' => 'sessions#login_page'
+  post 'login' => 'sessions#login'
+  get 'logout' => 'sessions#logout'
+
 end

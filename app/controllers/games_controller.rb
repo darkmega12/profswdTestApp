@@ -19,4 +19,14 @@ class GamesController < ApplicationController
 	def inventory
 		@name_search = params[:name_search]
 	end
+
+	def new_game_equipment
+
+	end
+
+	def create_game_equipment
+		values = params.permit(:name, :quantity, :weight)
+		GameEquipment.create(values)
+		redirect_to action: :inventory
+	end
 end
