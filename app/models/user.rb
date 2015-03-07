@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-	has_many:game_equipments
+	has_many: game_equipments
 
 	def self.create_user(name, username, password, password_confirm)
 		return false if password != password_confirm
